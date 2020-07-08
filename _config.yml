@@ -2,9 +2,9 @@
 # Site
 
 title: Frisco Template
-url: "https://brave-submarine.cloudvent.net"
+url: "https://www.fintart.io"
 baseurl:
-google_analytics_key:
+google_analytics_key: UA-47969245-8
 google_maps_javascript_api_key:
 disqus_shortname:
 
@@ -16,9 +16,8 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: FintArt
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
 
 # -----
 # Build
