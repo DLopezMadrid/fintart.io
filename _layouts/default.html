@@ -7,7 +7,8 @@
 
 		{% seo %}
 		{% feed_meta %}
-
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
@@ -27,7 +28,7 @@
 
 	<body>
 		<header id="mainHeader">
-			<div class="container">
+			<div class="container" style="margin-left: 10%;">
 				<div class="company-name">
 					<a href="{{ site.baseurl }}/">
 						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/fintartlogo.png" alt="dark frisco logo"></span>
@@ -71,6 +72,15 @@
 				</p>
 			</div>
 		</footer>
+		<script>
+		  (function(d, id) {
+		    if (d.getElementById(id)) return;
+		    var sc, node = d.getElementsByTagName('script')[0];
+		    sc = d.createElement('script'); sc.id = id;
+		    sc.src = 'https://sdk.getsitekit.com/static/js/app.js#apiKey=d1c06d8140df12ad0ecded0be86dd226';
+		    node.parentNode.insertBefore(sc, node);
+		  }(document, 'sitekit-sdk'));
+		</script>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>

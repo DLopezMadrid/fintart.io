@@ -29,7 +29,7 @@
 	}
 
 	.hero-text-container {
-		width: 600px;
+		width: 650px;
 		text-align: left;
 
 		h1, h2, p, .button {
@@ -70,5 +70,90 @@
 
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
+	}
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@bg: #2d2d37; // Dark blue
+@primary: #fd6b21; // Orange
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 530px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: transparent ;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: dodgerblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+    width:80%
+  }
+  .form-inline input {
+  width: 100%;
 	}
 }
