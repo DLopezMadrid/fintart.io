@@ -324,7 +324,7 @@
 
 
 
-@media (min-width: 768px){
+@media (min-width: 922px){
 .col-md-3 {
 
     position: relative;
@@ -354,14 +354,16 @@
 	margin-bottom: .75rem;
     text-align: center;
     margin-top: 60px;
-    height: 70px;
     font-family: 'Libre Baskerville', serif;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .proc-card {
     height: 100%;
     border: none;
     padding-bottom: 60px;
+    width: 94%;
   }
 
 .proc-card-order{
@@ -500,6 +502,34 @@ p{
 .card{
     margin: auto;
     height: 100%;
-    max-width: fit-content;
-    min-height: 440px;
+    min-height: 360px;
+}
+
+
+.carousel-card{
+    max-width: fit-content;	
+}
+
+
+@media (min-width: 768px){
+#proc-items {
+	flex: 0 0 50%;
+    max-width: 48%;
+}
+}
+
+@media (min-width: 922px){
+#proc-items  {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 }
