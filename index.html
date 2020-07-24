@@ -10,11 +10,11 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		<div class="hero-text-container">
 		    <img src="/images/logo/fintartlogo.png" align="left" style="height: 80px;" title="">
 			<h1 style="font-family: 'Libre Baskerville', serif;padding-left: 100px;">FintArt</h1>
-<h2 class="editable" style="padding-top: 30px;font-family: 'Libre Baskerville';">Democratising Art Investment</h2>			
+<h2 id="subtitle" class="editable" style="padding-top: 30px;font-family: 'Libre Baskerville';">Democratising Art Investment</h2>			
 <p></p>
-			<p class="subtext editable" style="font-family: 'Open Sans';">FintArt allows <b>everyone</b> to invest in blue-chip art.</p>
-
-			<p class="subtext editable" style="font-family: 'Open Sans';"><b>From as little as 1€</b>
+			<!-- <p class="subtext editable" style="font-family: 'Open Sans';">FintArt allows <b>everyone</b> to invest in blue-chip art.</p>
+ -->
+			<p class="subtext editable subtitle-text" style="font-family: 'Open Sans';"><b>From as little as 1€</b>
 			  you could diversify your portfolio on an asset that, on average, has outpaced the S&P500 returns during the last 20 years.</p>
 			<div>
 				<p></p>
@@ -28,7 +28,7 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		</div>
 	</div>
 	<div class="learn-more bounce">
-	  <a class="fa fa-arrow-down fa-2x" href="#"> Learn more &#x25BC</a>
+	  <a class="fa fa-arrow-down fa-2x" href="#learn-more"> Learn more &#x25BC</a>
 	</div>
 <!-- 	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div> -->
 
@@ -51,26 +51,97 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		
 	</section>
 
-	<section class="info">
-		<div class="container flex">
+<section class="info" style="
+    background: darkturquoise;
+	">
+	<div class="container flex" style="
+	    padding-top: 60px;
+	    flex-direction: row-reverse;
+	">
 			<div class="text">
-				<h2 class="editable">Pick your interests</h2>
-				<p class="editable">The more you tell Frisco the better it gets to know you. Frisco matches you with people who share similar interests with you.</p>
+				<h2 class="editable" style="
+				    padding-left: 40px;
+				">Access an exceptional investment opportunity</h2>
+								<p class="editable" style="
+				    padding-right: 43px;
+				    text-align: justify;
+				    padding-left: 40px;
+				">Access an exclusive market of high returns.
+				Invest in the finest paintings and sculptures for a reasonable price. You decide in which one and how much..</p>
 			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+			<div >
+				<table style="width:100%">
+					<tr>
+						<th></th>
+					</tr>
+				  <tr>
+				  	<td class="annual-numbers-title">				  		
+				    Average Annual Returns Since 2000
+				  	</td>
+				  </tr>
+				  <tr>
+				  	<td class="annual-numbers-figure">				  		
+					8.9%
+				  	</td>
+				  </tr>
+  				  <tr>
+				  	<td class="annual-numbers-title">				  		
+				    Global Art Sales In 2018
+  				  	</td>
+				  </tr>
+				  <tr>
+				  	<td class="annual-numbers-figure">				  		
+					59.6B€
+				  	</td>
+				  </tr>
+				  <tr>
+				  	<td class="annual-numbers-title">				  		
+					Works sold for more than 1M€ in 2018
+				  	</td>
+				  </tr>
+				  <tr>
+				  	<td class="annual-numbers-figure">				  		
+					61%
+				  	</td>
+				  </tr>
+				</table>
 			</div>
 		</div>
 	</section>
 
-	<section class="info">
-		<div class="container flex">
+	<section>
+		{% include thirds.html %}
+	</section>
+
+<section class="info" style="
+    background: darkturquoise;
+	">
+			<div class="container flex" style="	    padding-top: 60px;
+flex-wrap: wrap;">
 			<div class="text">
-				<h2 class="editable">Swipe and go</h2>
-				<p class="editable">Frisco shows you cards with people who might be a good match for friendship. Swipe left to move to the next card or right to start talking.</p>
+				<h2 class="editable">Fees</h2>
+				<p class="editable">Our fees are lower than all our competitors and allow you to get a higher return on your investment</p>
 			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+			<div class="break"></div>
+			<div class="price-list">
+				<table class="table" style="width:100%">
+					<tr class="fee-title">
+						<th>0€-1,000€</th>
+						<th>10,000€-50,000€</th>
+						<th>50,000€+</th>
+					</tr>
+				  <tr class="fee-figure">
+				  	<td >
+				    1.5% p/a
+				  	</td>
+				  	<td >
+				    1.25% p/a
+				  	</td>
+					  	<td >
+				    1.0% p/a
+				  	</td>
+				  </tr>
+				</table>
 			</div>
 		</div>
 	</section>

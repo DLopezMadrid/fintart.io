@@ -33,7 +33,7 @@
 		text-align: left;
 
 		h1, h2, p, .button {
-			text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+			text-shadow: 2px 2px 7px rgba(0,0,0,.8);
 		}
 	}
 
@@ -143,7 +143,11 @@
   background-color: dodgerblue;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 766px) {
+  #subtitle{
+  font-size:2em;
+  }
+
   .form-inline input {
     margin: 10px 0;
   }
@@ -151,7 +155,8 @@
   .form-inline {
     flex-direction: column;
     align-items: stretch;
-    width:80%
+    width:80%;
+    margin:auto;
   }
   .form-inline input {
   width: 100%;
@@ -162,9 +167,14 @@
 /* Tablet and up */
 
 @media screen and (min-width: 766px) {
+
+  #subtitle{
+  font-size:3em;
+  }
+
   .carousel{
     margin: auto;
-    max-width: 1100px;
+    max-width: 600px;
   }
 
   .carousel-inner .active,
@@ -223,10 +233,11 @@
 
 /* Desktop and up */
 
-@media screen and (min-width: 1032px) {
+@media screen and (min-width: 902px) {
 
   .carousel{
     width: 60%;
+    max-width: 1024px;
     margin: auto;
   }
 
@@ -301,3 +312,130 @@
     height: 300px;
     object-fit: cover;
 }
+
+.subtitle-text{
+	text-align: justify;
+}
+
+#carousel-controls{
+	margin-bottom: 24px;
+	padding-bottom:24px;
+}
+
+
+
+@media (min-width: 768px){
+.col-md-3 {
+
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+
+	-webkit-box-sizing: inherit;
+    box-sizing: inherit;
+
+    display:block;
+
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+
+.proc-card-text:last-child {
+    margin-bottom: 0;
+    text-align: center;
+    margin: 15px;
+}
+
+.proc-card-title {
+	margin-bottom: .75rem;
+    text-align: center;
+    margin-top: 60px;
+    height: 70px;
+}
+
+.proc-card {
+    height: 100%;
+    border: none;
+    padding-bottom: 60px;
+  }
+
+.proc-card-order{
+	width: 100px;
+    min-height: 100px;
+    text-align: center;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    align-self: center;
+    font-size: -webkit-xxx-large;
+    align-items: center;
+    -webkit-box-align: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.proc-card-order-number{
+	height: 100%;
+	display: flex;
+    /* width: 100%; */
+    height: 100%;
+    /* -webkit-box-align: center; */
+    /* -webkit-align-items: center; */
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.proc-card-block{
+	border: black;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: black;
+    height: 100%;
+    margin-top: -46px;
+    z-index: 1;
+}
+
+.annual-numbers-figure{
+    font-size: xxx-large;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}			  
+
+
+.annual-numbers-title{
+	font-family: bold;
+    text-align: center;
+    font-size: x-large;
+}			 
+
+.info{
+	margin-top: 60px;
+} 
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.price-list{
+	width: 100%;
+}
+
+.fee-title{
+	font-family: bold;
+    text-align: center;
+    font-size: xx-large;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.fee-figure{
+    font-size: xx-large;
+    text-align: center;
+}	
