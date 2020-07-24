@@ -233,10 +233,10 @@
 
 /* Desktop and up */
 
-@media screen and (min-width: 902px) {
+@media screen and (min-width: 922px) {
 
   .carousel{
-    width: 60%;
+    width: 90%;
     max-width: 1024px;
     margin: auto;
   }
@@ -430,6 +430,7 @@
 }
 
 .fee-title{
+	font-family: 'Lato';
 	font-family: bold;
     text-align: center;
     font-size: xx-large;
@@ -437,6 +438,7 @@
 }
 
 .fee-figure{
+	font-family: 'Lato';
     font-size: xx-large;
     text-align: center;
 }	
@@ -448,4 +450,56 @@ h2{
 
 .card-title{
     font-family: 'Libre Baskerville', serif;
+}
+
+p{
+	font-family: 'Lato';
+}
+
+.card-body{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+@media (min-width: 914px){
+.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.333333%;
+}
+}
+
+.card-img-d{
+	margin-top: auto;
+
+} 
+
+.card-img{
+/*    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto auto 0;*/
+} 
+
+
+.card{
+    margin: auto;
+    height: 100%;
+    max-width: fit-content;
+    min-height: 440px;
 }
